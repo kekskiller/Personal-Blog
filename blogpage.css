@@ -1,0 +1,30 @@
+.blog-content{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.img {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20vh;
+    overflow:hidden;
+    width: 100%;
+
+}
+
+
+@media screen and (min-width: 480px) and (max-width: 959px) {
+    .img {
+        height: 30vh;    
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .img {
+        height: 40vh;
+    }
+}
+    
