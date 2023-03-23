@@ -64,9 +64,6 @@
     font-size:0.8em;
 }
 
-
-
-
 @media only screen and (min-width: 480px) and (max-width: 959px) {
     .card{
         width:45vw;

@@ -14,7 +14,6 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     color: var(--main);
-
   }
 
   html, body {
@@ -25,7 +24,6 @@
 .frame {
     width: 100%;
     display: grid;
-
     grid-template-rows: auto auto 1fr auto;
     grid-template-areas: 
     "title title title"
@@ -65,7 +63,6 @@ a {
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
 
 footer {
