@@ -13,17 +13,7 @@
     margin: 0 10px 0 10px;
 }  
 
-.social-media {
-    margin: 0 10px 0 auto;
-    cursor:pointer; 
-}
-
-.social-media  img {
-    height: 20px;
-    width: 20px;
-}
-
-@media screen and (min-width: 480px) and (max-width: 959px) {
+@media only screen and (min-width: 480px) and (max-width: 959px) {
 
     .navframe{
         font-size: 1em;
@@ -31,7 +21,7 @@
 
 }
 
-@media screen and (min-width: 960px) {
+@media  only screen and (min-width: 960px) {
     .navframe{
         grid-area:nav;
 
@@ -47,11 +37,7 @@
         cursor:pointer;  
         margin: 20px 10px;
     }  
-    
-    .social-media {
-        margin: auto 10px 20px 10px;
-        cursor:pointer; 
-    }
+
 
 }
     

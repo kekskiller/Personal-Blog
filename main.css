@@ -8,7 +8,7 @@
     --grey: #ececec;
     --accent-dark: #006d6d;
     --accent-mid: #47b3b3;
-    --accent-light: #9ce2e2;
+    --accent-light: #caf0f0;
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
@@ -70,7 +70,7 @@ a {
 
 footer {
     grid-area:footer;
-    background-color: var(--accent-light);
+    background-color: var(--accent-mid);
     text-align: center;
     width: 100%;
     height: 60px;
@@ -79,7 +79,7 @@ footer {
 }
 
 
-@media screen and (min-width: 480px) and (max-width: 959px) {
+@media only screen and (min-width: 480px) and (max-width: 959px) {
     .content {
         background-color: var(--grey);
         margin: 10px;
@@ -87,7 +87,7 @@ footer {
     }
 }
 
-@media screen and (min-width: 960px) {
+@media only screen and (min-width: 960px) {
     .frame {
         grid-template-rows: auto  1fr auto;
         grid-template-columns: 270px 1fr 1fr;

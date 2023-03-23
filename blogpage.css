@@ -14,17 +14,98 @@
     width: 100%;
 
 }
+header {
+    margin-bottom: 30px;
+}
+header > h2 {
+    font-size: 2.2em;
+    text-align: center;
+}
 
+.blog-author {
+    text-align: center;
+    font-size:1.2em;
+}
 
-@media screen and (min-width: 480px) and (max-width: 959px) {
+.blog-date {
+    text-align: center;
+    font-size:0.8em;
+}
+
+.share {
+    margin:20px;
+    font-family:'Lobster', cursive;
+    font-size:1.3em;
+}
+
+.share img {
+    height: 20px;
+    width: 20px;
+    margin: 0 10px;
+    cursor:pointer; 
+}
+
+.about {
+    width: 80%;
+    background-color: white;
+    border: 1px solid var(--accent-dark);
+
+    margin:20px;
+}
+
+.about-details {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-template-areas: 
+    "about-ava about-name"
+    "about-ava about-title"
+    "about-ava about-company"
+    "about-ava about-bio";
+}
+
+.about-ava {
+    display: flex;
+    justify-content: center;
+    grid-area: about-ava;
+}
+.about-ava img {
+    height: 80px;
+    width:80px;
+    border-radius:40px;
+}
+.about-name {
+    grid-area: about-name;
+    font-weight: 800;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+.about-title {
+    grid-area: about-title;
+    font-style: italic;
+}
+.about-company {
+    grid-area:about-company;
+    margin-bottom: 10px;
+}
+.about-bio {
+    grid-area:about-bio;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 959px) {
     .img {
         height: 30vh;    
     }
+    .about {
+        width: 60%;
+    }
 }
 
-@media screen and (min-width: 960px) {
+@media only screen and (min-width: 960px) {
     .img {
         height: 40vh;
+    }
+    .about {
+        width: 50%;
     }
 }
     

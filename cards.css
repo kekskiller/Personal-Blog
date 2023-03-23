@@ -1,41 +1,58 @@
 .card {
-    display: flex;
+    display:grid;
     padding: 0;
     height: 11em;
     width: 100%;
-    background-color: var(--main);
-    overflow:hidden;
+    box-shadow: 2px 2px 1px var(--accent-dark);
     margin: 20px 0;
     overflow: hidden;
+    background-color: var(--accent-light);
+    grid-template-columns: 3fr 2fr 2fr;
+    grid-template-rows: 3fr 1fr 1fr;
+    grid-template-areas: 
+        "bcimg bctitle bctitle"
+        "bcimg bcauthor bcauthor"
+        "bcimg bcdate bcdate"
+    ;
 }
 
 .card-img {
+    grid-area:bcimg;
+    display:flex;
+    justify-content: center;
+    overflow:hidden;
+}
+
+.card-img img {
+    height: 120%;
+} 
+
+
+.card-title, .card-author, .card-date {
+
+    padding: 10px 20px;
     margin: 0;
     width: 100%;
-    height:100%;
-    background-color: red;
-    transition: all 0.2s ease-in-out ;
 }
 
-.card-text {
-        margin: 0;
-        padding: 0;
-        width: 0%;
-        height:100%;
-        background-color: green;
-        transition: all 0.2s ease-in-out ;
+.card-title {
+    grid-area: bctitle;
+    font-family:'Lobster', cursive;
+    font-size:1.6em;
+}
+.card-author {
+    grid-area: bcauthor;
+}
+.card-date {
+    grid-area: bcdate;
+    font-style:italic;
+    font-size:0.8em;
 }
 
-.card:hover  .card-img{
-    width: 35%;
-}
 
 
-.card:hover  .card-text{
-    width: 65%;
-}
 
-@media screen and (min-width: 480px) and (max-width: 959px) {
+@media only screen and (min-width: 480px) and (max-width: 959px) {
     .card{
         width:45vw;
         min-width: 20em;
@@ -43,9 +60,10 @@
     }
 }
 
-@media screen and (min-width: 960px) {
+@media only screen and (min-width: 960px) {
     .card{
         width:30vw;
+        height: 12em;
         margin: 20px;
     }
 
