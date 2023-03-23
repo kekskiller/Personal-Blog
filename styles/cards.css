@@ -37,9 +37,24 @@
 
 .card-title {
     grid-area: bctitle;
+}
+
+.card-title a {
     font-family:'Lobster', cursive;
     font-size:1.6em;
+    background-color: var(--accent-dark);
+    border: 1px solid black;
+    border-radius:15px;
+    color: white;
+    padding: 3px 13px;
+    width: 100%;
 }
+
+.card-title a:active{
+    background-color: var(--accent-mid);
+}
+
+
 .card-author {
     grid-area: bcauthor;
 }

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-@import url('./blogpage.css');
-@import url('./navigation.css');
-@import url('./cards.css');
+@import url('./styles/blogpage.css');
+@import url('./styles/navigation.css');
+@import url('./styles/cards.css');
 
 * {
     --main: #301551;
